@@ -1,3 +1,12 @@
+![Example Output](./soc-00.png)
+
+# SOC Tool v1.0
+I wrote this tool as a SOC analyst and Incident Responder.  It takes an IP, domain name, or file hash
+as an argument, will search various OSINT sources for it, and return only the most salient details to
+the terminal.  Quick, dirty, easy.  It grew as time went on.  APIs changed, services became paid-only,
+etc.  It wasn't worth the time to clean up because it worked "Good Enough", but it degraded as you can
+see in the screen shot.
+
 --------------------------------------------------------------------------------------------------------
 1. Get your API tokens from the different providers.  They're free and the accounts are easy to set up.
 2. Enter your tokens in the appropriate spots in variables section of the .py
