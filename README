@@ -1,4 +1,4 @@
-![Example Output](./soc-01.png)
+![Example Output](soc-01.png)
 
 # SOC Tool v1.0
 I wrote this tool as a SOC analyst and Incident Responder.  It takes an IP, domain name, or file hash
