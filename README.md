@@ -1,12 +1,11 @@
-![Example Output](https://github.com/mbourn/soc-tool/blob/main/soc-01.png)
-
-# SOC Tool v1.0
+# SOC-Tool v1.0
 I wrote this tool as a SOC analyst and Incident Responder.  It takes an IP, domain name, or file hash
 as an argument, will search various OSINT sources for it, and return only the most salient details to
 the terminal.  Quick, dirty, easy.  It grew as time went on.  APIs changed, services became paid-only,
 etc.  It wasn't worth the time to clean up because it worked "Good Enough", but it degraded as you can
 see in the screen shot.
 
+![Example Output](https://github.com/mbourn/soc-tool/blob/main/soc-01.png)
 --------------------------------------------------------------------------------------------------------
 1. Get your API tokens from the different providers.  They're free and the accounts are easy to set up.
 2. Enter your tokens in the appropriate spots in variables section of the .py
@@ -15,46 +14,44 @@ see in the screen shot.
 5a. I ain't a developer, I ain't gonna maintain it, you're on your own
 5b. There's a lot of data that doesn't get used, you may want to explore the data
 --------------------------------------------------------------------------------------------------------
-
 # Put these files together somewhere
+##  socFuncsDoms.py
+Contains the functions for working with domains
+
+## socFuncsHashs.py
+Contains the functions for working with hashes
+
+## socFuncsIPs.py
+Contains the functions for working with IPs
+
+## socLists.py
+Contains lists used by various functions
+
+## socVars.py
+Contains the variables used by the functions
+
+## soc.py
+The main executable
+
+## README.md 
+Contains this ... oh noes, recursion ...
+
 --------------------------------------------------------------------------------------------------------
-#  socFuncsDoms.py
-## Contains the functions for working with domains
+## Get your API creds from these OSINT sources
+Add them to socVars.py where appropriate
+- https://www.ioclists.com/#api
+- https://www.phishtank.com/developer_info.php
+- https://checkphish.ai/checkphish-api/
+- https://whois.whoisxmlapi.com/documentation/making-requests
+- https://www.ipqualityscore.com/documentation/overview
+- https://getipintel.net/ # You don't need to sign up, just use an email address in the query
+- https://bazaar.abuse.ch/api/
+- https://malshare.com/doc.php
+- https://developers.virustotal.com/v3.0/reference
+- https://www.projecthoneypot.org/httpbl_api.php
+- https://docs.dnsdb.info/dnsdb-apiv2/
+- https://analyze.intezer.com/
+- https://www.hybrid-analysis.com/docs/api/v2
+- https://onionoo.torproject.org # No sign up necessary
 
-# socFuncsHashs.py
-## Contains the functions for working with hashes
 
-# socFuncsIPs.py
-## Contains the functions for working with IPs
-
-# socLists.py
-## Contains lists used by various functions
-
-# socVars.py
-## Contains the variables used by the functions
- 
-# soc.py
-## The main executable
-
-# README
-## Contains this ... oh noes, recursion ...
-
---------------------------------------------------------------------------------------------------------
-# Get your API creds from these OSINT sources
-
-https://www.ioclists.com/#api
-https://www.phishtank.com/developer_info.php
-https://checkphish.ai/checkphish-api/
-https://whois.whoisxmlapi.com/documentation/making-requests
-https://www.ipqualityscore.com/documentation/overview
-https://getipintel.net/ # You don't need to sign up, just use an email address in the query
-https://bazaar.abuse.ch/api/
-https://malshare.com/doc.php
-https://developers.virustotal.com/v3.0/reference
-https://www.projecthoneypot.org/httpbl_api.php
-https://docs.dnsdb.info/dnsdb-apiv2/
-https://analyze.intezer.com/
-https://www.hybrid-analysis.com/docs/api/v2
-https://onionoo.torproject.org # No sign up necessary
-
-Input them into socVars.py
